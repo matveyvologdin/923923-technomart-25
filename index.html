@@ -3,21 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<header class="main-header">
       <div class="top-menu">
-  		<div class="header-logo-container"><img src="img/index-logo.svg" height="19" width="109" alt="Логотип интернет-магазина Техномарт"></div>
+  		<div class="header-logo"><a><img src="img/index-logo.svg" height="19" width="109" alt="Логотип интернет-магазина Техномарт"></a></div>
       <form class="site-search" method="GET" action="https://echo.htmlacademy.ru">
-        <button type="submit" class="search-button">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve"><path fill="#ffffff" d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5 C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2   C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z"/></svg>
-        </button>
   		  <label class="visually-hidden" for="search">Поиск:</label>
         <input class="search-input" type="text" placeholder="Поиск:" name="search-field" id="search">
+        <button type="submit" class="search-button">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve"><path d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5 C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2   C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z"/></svg>
+        </button>
       </form>
   		<div class="markers"><a href="markers.html"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve"><path fill="#ffffff" d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765  C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/></svg>
       Закладки:<b> 0</b></a>
@@ -26,16 +24,17 @@
       Корзина:<b> 0</b></a>
       </div>
   		<div class="checkout"><a href="checkout.html">Оформить заказ</a></div></div>
-  		<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <div class="phone"><img src="img/icon-phone.svg" height="19" width="19" alt="Иконка телефона"><a href="tel:78125550555">+7 (812) 555-05-55</a></div>
-      <address>г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</address>
+      <div class="middle-header">
+  		<h1 class="h1-index">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <div class="header-contacts"><div class="phone"><img src="img/icon-phone.svg" height="19" width="19" alt="Иконка телефона"><a href="tel:78125550555">+7 (812) 555-05-55</a></div>
+      <address class="header-address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</address></div>
       <section class="account-ui">
         <h2 class="visually-hidden">Аккаунт</h2>
         <ul class="account-actions">
         	<li class="login"><a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve"><g><polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17  "/></g><path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027  v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/></svg><p>Войти</p></a></li>
         	<li class="registration"><a href="registration.html">Регистрация</a></li>
-        </ul>
-      </section>
+        </ul></section>
+      </div>
       <nav class="main-navigation">
         <ul class="site-navigation">
         	<li><a>Главная</a></li>
@@ -49,6 +48,7 @@
       </nav>
   	</header>
   	<main>
+      <div class="bottom-main-container">
   	  <section class="about-us">
   		  <h2>КОМПАНИЯ «Техномарт»</h2>
   		  <p>Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
@@ -66,6 +66,7 @@
         <a href="https://goo.gl/maps/sah5tntQXJNzWJVT9"><img src="img/map.png" height="158" width="300" alt="Карта"><p class="visually-hidden">Карта</p></a>
   			<div class="feedback-link"><a href="contacts.html">Заблудились?Напишите нам!</a></div>
   		</section>
+      </div>
       <form class="form-for-msg" method="get" action="https://echo.htmlacademy.ru">
         <label>Ваше имя<input type="text" name="name-field" placeholder="Имя Фамилия"></label>
         <label>Ваш e-mail<input type="text" name="email-field" placeholder="email@example.com"></label>
@@ -76,9 +77,10 @@
   	</main>
   	<footer class="main-footer">
       <div class="top-footer">
-  		  <div class="footer-logo-container"><img src="img/footer-logo.png" height="23" width="138" alt="Логотип интернет-магазина Техномарт"></div>
-  		  <div class="main-footer-contacts">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8
-        +7 (812) 555-05-55</div>
+        <div class="left-footer-container">
+  		  <div class="footer-logo"><a><img src="img/footer-logo.png" height="23" width="138" alt="Логотип интернет-магазина Техномарт"></a></div>
+  		  <address class="footer-address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</address>
+        <a class="phone-footer" href="tel:78125550555">+7 (812) 555-05-55</a></div> 
   		  <nav class="footer-navigation">
   		    <ul class="company-navigation">
             <li><a href="company.html">Компания</a></li>
@@ -96,20 +98,22 @@
        </nav>
       </div>
       <div class="bottom-footer">
-  		  <section class="rights">
-  			  <h2>© 2010-2019 Компания "Техномарт" Все права защищены</h2>
-  		  </section>
-  		  <section class="footer-social">
-  			  <h2 class="visually-hidden">Ссылки на соц.сети</h2>
-  			  <ul class="social-links">
-  				  <li class="vk-link"><a href="#"><img src="img/vk-icon.svg" alt="Иконка вконтакте" width="26" height="15"></a></li>
-  			  	<li class="facebook-link"><a href="#"><img src="img/fb-icon.svg" alt="Иконка фэйсбук" width="12" height="22"></a></li>
-  				  <li class="instagram-link"><a href="#"><img src="img/insta-icon.svg" alt="Иконка инстаграм" height="21" width="21"></a></li>
-  			  </ul> 
-  		  </section>
-        <div class="feedback">
-  		    <p>Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-  		    <p>Разработано- <a href="htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        <div class="bottom-footer-container">
+  		    <section class="rights">
+  			    <h2>© 2010-2019 Компания "Техномарт" Все права защищены</h2>
+  		    </section>
+  		    <section class="footer-social">
+  			    <h2 class="visually-hidden">Ссылки на соц.сети</h2>
+  		  	  <ul class="social-links">
+  			  	  <li class="vk-link"><a href="#"><img src="img/vk-icon.svg" alt="Иконка вконтакте" width="26" height="15"></a></li>
+  			    	<li class="facebook-link"><a href="#"><img src="img/fb-icon.svg" alt="Иконка фэйсбук" width="12" height="22"></a></li>
+  				    <li class="instagram-link"><a href="#"><img src="img/insta-icon.svg" alt="Иконка инстаграм" height="21" width="21"></a></li>
+  			    </ul> 
+  		    </section>
+          <div class="feedback">
+  		      <p class="mail-footer">Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+  		      <p class="site-footer">Разработано- <a href="htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+          </div>
         </div>
       </div>
   	</footer>
