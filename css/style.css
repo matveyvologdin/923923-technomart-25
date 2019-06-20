@@ -938,7 +938,7 @@ input[type="radio"]:not(:checked) + label::before{
     margin-left:43px;
 }
 .catalog-items li:nth-child(3n) .new-price-container{
-    margin-top:28px;
+    margin-top:: ;px;
 }
 .new-price{
 	display: block;
